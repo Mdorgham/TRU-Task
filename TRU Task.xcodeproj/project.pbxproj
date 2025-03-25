@@ -7,25 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6D22E6B2D92E1B10050FB7B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6D22E6A2D92E1B10050FB7B /* Alamofire */; };
+		F6D22E702D92E2FF0050FB7B /* AllProductsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D22E6F2D92E2FF0050FB7B /* AllProductsVM.swift */; };
+		F6D22E722D92E87C0050FB7B /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D22E712D92E87C0050FB7B /* ProductsModel.swift */; };
+		F6D22E742D92F6690050FB7B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D22E732D92F6690050FB7B /* ImageView.swift */; };
 		F6DBBA6C2D9200C000BD971C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBBA6B2D9200C000BD971C /* AppDelegate.swift */; };
 		F6DBBA6E2D9200C000BD971C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBBA6D2D9200C000BD971C /* SceneDelegate.swift */; };
-		F6DBBA702D9200C000BD971C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBBA6F2D9200C000BD971C /* ViewController.swift */; };
 		F6DBBA732D9200C000BD971C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DBBA712D9200C000BD971C /* Main.storyboard */; };
 		F6DBBA762D9200C000BD971C /* TRU_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6DBBA742D9200C000BD971C /* TRU_Task.xcdatamodeld */; };
 		F6DBBA782D9200C200BD971C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DBBA772D9200C200BD971C /* Assets.xcassets */; };
 		F6DBBA7B2D9200C200BD971C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DBBA792D9200C200BD971C /* LaunchScreen.storyboard */; };
+		F6DBBA892D92052000BD971C /* AllProductsCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBBA882D92052000BD971C /* AllProductsCV.swift */; };
+		F6DBBA8B2D92152100BD971C /* ProductCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBBA8A2D92152100BD971C /* ProductCV.swift */; };
+		F6DBBA8D2D9216A300BD971C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBBA8C2D9216A300BD971C /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6D22E6F2D92E2FF0050FB7B /* AllProductsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsVM.swift; sourceTree = "<group>"; };
+		F6D22E712D92E87C0050FB7B /* ProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
+		F6D22E732D92F6690050FB7B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		F6DBBA682D9200C000BD971C /* TRU Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TRU Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DBBA6B2D9200C000BD971C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6DBBA6D2D9200C000BD971C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6DBBA6F2D9200C000BD971C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6DBBA722D9200C000BD971C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6DBBA752D9200C000BD971C /* TRU_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TRU_Task.xcdatamodel; sourceTree = "<group>"; };
 		F6DBBA772D9200C200BD971C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6DBBA7A2D9200C200BD971C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6DBBA7C2D9200C200BD971C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DBBA882D92052000BD971C /* AllProductsCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsCV.swift; sourceTree = "<group>"; };
+		F6DBBA8A2D92152100BD971C /* ProductCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCV.swift; sourceTree = "<group>"; };
+		F6DBBA8C2D9216A300BD971C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +44,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D22E6B2D92E1B10050FB7B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6D22E6E2D92E2DF0050FB7B /* AllProducts */ = {
+			isa = PBXGroup;
+			children = (
+				F6DBBA882D92052000BD971C /* AllProductsCV.swift */,
+				F6D22E6F2D92E2FF0050FB7B /* AllProductsVM.swift */,
+			);
+			path = AllProducts;
+			sourceTree = "<group>";
+		};
 		F6DBBA5F2D9200BF00BD971C = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +79,68 @@
 		F6DBBA6A2D9200C000BD971C /* TRU Task */ = {
 			isa = PBXGroup;
 			children = (
-				F6DBBA6B2D9200C000BD971C /* AppDelegate.swift */,
-				F6DBBA6D2D9200C000BD971C /* SceneDelegate.swift */,
-				F6DBBA6F2D9200C000BD971C /* ViewController.swift */,
-				F6DBBA712D9200C000BD971C /* Main.storyboard */,
-				F6DBBA772D9200C200BD971C /* Assets.xcassets */,
-				F6DBBA792D9200C200BD971C /* LaunchScreen.storyboard */,
+				F6DBBA822D92047100BD971C /* App Manager */,
+				F6DBBA842D9204AE00BD971C /* Networking */,
+				F6DBBA832D92048D00BD971C /* Assets */,
+				F6DBBA852D9204B800BD971C /* UI + Ext */,
+				F6DBBA872D9204C900BD971C /* Model */,
+				F6DBBA862D9204C200BD971C /* View */,
 				F6DBBA7C2D9200C200BD971C /* Info.plist */,
 				F6DBBA742D9200C000BD971C /* TRU_Task.xcdatamodeld */,
 			);
 			path = "TRU Task";
+			sourceTree = "<group>";
+		};
+		F6DBBA822D92047100BD971C /* App Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F6DBBA6B2D9200C000BD971C /* AppDelegate.swift */,
+				F6DBBA6D2D9200C000BD971C /* SceneDelegate.swift */,
+			);
+			path = "App Manager";
+			sourceTree = "<group>";
+		};
+		F6DBBA832D92048D00BD971C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F6DBBA772D9200C200BD971C /* Assets.xcassets */,
+				F6DBBA712D9200C000BD971C /* Main.storyboard */,
+				F6DBBA792D9200C200BD971C /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F6DBBA842D9204AE00BD971C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F6DBBA852D9204B800BD971C /* UI + Ext */ = {
+			isa = PBXGroup;
+			children = (
+				F6D22E732D92F6690050FB7B /* ImageView.swift */,
+			);
+			path = "UI + Ext";
+			sourceTree = "<group>";
+		};
+		F6DBBA862D9204C200BD971C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6DBBA8C2D9216A300BD971C /* ContentView.swift */,
+				F6D22E6E2D92E2DF0050FB7B /* AllProducts */,
+				F6DBBA8A2D92152100BD971C /* ProductCV.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6DBBA872D9204C900BD971C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6D22E712D92E87C0050FB7B /* ProductsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +159,9 @@
 			dependencies = (
 			);
 			name = "TRU Task";
+			packageProductDependencies = (
+				F6D22E6A2D92E1B10050FB7B /* Alamofire */,
+			);
 			productName = "TRU Task";
 			productReference = F6DBBA682D9200C000BD971C /* TRU Task.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +190,9 @@
 				Base,
 			);
 			mainGroup = F6DBBA5F2D9200BF00BD971C;
+			packageReferences = (
+				F6D22E692D92E1B10050FB7B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F6DBBA692D9200C000BD971C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,9 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6DBBA702D9200C000BD971C /* ViewController.swift in Sources */,
 				F6DBBA6C2D9200C000BD971C /* AppDelegate.swift in Sources */,
+				F6DBBA8B2D92152100BD971C /* ProductCV.swift in Sources */,
+				F6DBBA8D2D9216A300BD971C /* ContentView.swift in Sources */,
+				F6D22E722D92E87C0050FB7B /* ProductsModel.swift in Sources */,
+				F6DBBA892D92052000BD971C /* AllProductsCV.swift in Sources */,
 				F6DBBA762D9200C000BD971C /* TRU_Task.xcdatamodeld in Sources */,
+				F6D22E742D92F6690050FB7B /* ImageView.swift in Sources */,
+				F6D22E702D92E2FF0050FB7B /* AllProductsVM.swift in Sources */,
 				F6DBBA6E2D9200C000BD971C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +446,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6D22E692D92E1B10050FB7B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6D22E6A2D92E1B10050FB7B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6D22E692D92E1B10050FB7B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F6DBBA742D9200C000BD971C /* TRU_Task.xcdatamodeld */ = {
