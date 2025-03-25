@@ -6,19 +6,21 @@
 //
 
 import SwiftUI
-
+import SkeletonUI
 
 struct AllProductsCV: View {
     
     @ObservedObject var vm = ViewModel()
     @Binding var detailViewName: String?
     @Binding var product: Product?
+    @State var prodListType = 0
     var animation: Namespace.ID
     var twoColumnGrid = [GridItem(.flexible()), GridItem(.flexible())]
+    var oneColumnGrid = [GridItem(.flexible())]
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack (spacing: 30){
                 topView
                 searchBar
                 productsList
@@ -71,12 +73,26 @@ struct AllProductsCV: View {
         .background(Color.white.cornerRadius(20))
     }
     var productsList: some View {
-        VStack(alignment: .leading,spacing: 10) {
-            Text("Special Items")
-                .font(.system(.body, design: .rounded))
-                .fontWeight(.heavy)
+        VStack(alignment: .leading,spacing: 20) {
+            HStack {
+                Text("Special Items")
+                    .font(.system(.body, design: .rounded))
+                    .fontWeight(.heavy)
+                Spacer()
+                Button {
+                    if prodListType == 0 {
+                        prodListType = 1
+                    }else {
+                        prodListType = 0
+                    }
+                }label: {
+                    Image(systemName: prodListType == 0 ? "rectangle.grid.1x2.fill" : "square.grid.2x2.fill")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(.black)
+                }
+            }
             ScrollView {
-                LazyVGrid(columns: twoColumnGrid,spacing: 20) {
+                LazyVGrid(columns: prodListType == 0 ? twoColumnGrid : oneColumnGrid,spacing: 20) {
                     ForEach(vm.products, id: \.id) { product in
                         Button {
                             withAnimation(Animation.easeIn(duration: 0.5)) {
@@ -92,6 +108,7 @@ struct AllProductsCV: View {
                                             placeholder: Image(systemName: "photo"),
                                             width: .infinity, height: 70
                                         )
+                                        .skeleton(with: vm.isLoading, shape: .circle)
                                         .matchedGeometryEffect(id: product.image ?? "", in: animation)
                                         .padding(8)
                                         HStack {
@@ -104,6 +121,7 @@ struct AllProductsCV: View {
                                                 .fontWeight(.thin)
                                         }
                                         .padding(8)
+                                        .skeleton(with: vm.isLoading, shape: .capsule)
                                     }
                                     Spacer()
                                     HStack(alignment: .top) {
@@ -112,25 +130,39 @@ struct AllProductsCV: View {
                                                 .font(.system(.caption, design: .rounded))
                                                 .fontWeight(.semibold)
                                                 .multilineTextAlignment(.leading)
+                                                .skeleton(with: vm.isLoading, shape: .capsule)
                                                 .matchedGeometryEffect(id: product.title ?? "", in: animation)
                                             Text(product.category ?? "")
                                                 .font(.system(.caption2, design: .rounded))
                                                 .fontWeight(.light)
                                                 .foregroundColor(.gray)
+                                                .skeleton(with: vm.isLoading, shape: .capsule)
                                         }
                                         Spacer()
                                         Text("$\(String(format: "%.2f", product.price ?? 0))")
                                             .font(.system(.caption2, design: .rounded))
                                             .fontWeight(.medium)
+                                            .skeleton(with: vm.isLoading, shape: .capsule)
                                     }
                                     .padding(.horizontal, 5)
                                 }
                                 .background(Color.gray.opacity(0.1).cornerRadius(12))
                             }
+                            .foregroundColor(.black)
                             .padding(8)
                             .frame(height: 180)
                             .background(Color.white.cornerRadius(12).shadow(color: .gray.opacity(0.3), radius: 3, x: 0, y: 0))
                         }
+                        
+                    }
+                    if vm.isLoading {
+                        ProgressView()
+                    } else {
+                        Color.clear
+                            .frame(height: 50)
+                            .onAppear {
+                                vm.fetchProducts()
+                            }
                     }
                 }
             }
