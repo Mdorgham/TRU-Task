@@ -85,13 +85,13 @@ struct ProductCV: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .foregroundStyle(Color.gray.opacity(0.5))
-                
-                actionButtons
                 Spacer()
+                actionButtons
+                
             }
             .padding(30)
             .frame(maxWidth: .infinity)
-            .background(Color.gray.opacity(0.1).cornerRadius(70,corners: [.topLeft]))
+            .background(Color.gray.opacity(0.1).cornerRadius(70,corners: [.topLeft, .bottomLeft, .bottomRight]))
             
         }
         
@@ -114,6 +114,7 @@ struct ProductCV: View {
             }.frame(maxWidth: .infinity,maxHeight: 50)
                 .background(Color.white.cornerRadius(25))
         }
+        .padding(.bottom, 30)
     }
         
   
