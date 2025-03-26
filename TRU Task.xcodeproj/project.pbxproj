@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6BDBB552D942F3A00F6D68D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDBB522D942F3A00F6D68D /* SearchBarView.swift */; };
+		F6BDBB562D942F3A00F6D68D /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDBB532D942F3A00F6D68D /* TopView.swift */; };
+		F6BDBB572D942F3A00F6D68D /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDBB542D942F3A00F6D68D /* ProductCardView.swift */; };
 		F6BFD9E22D935AC200B86301 /* Shapes in Frameworks */ = {isa = PBXBuildFile; productRef = F6BFD9E12D935AC200B86301 /* Shapes */; };
 		F6BFD9E52D93697B00B86301 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = F6BFD9E42D93697B00B86301 /* SkeletonUI */; };
 		F6C689722D932BBA00F75DC0 /* CachingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C689712D932BBA00F75DC0 /* CachingServices.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6BDBB522D942F3A00F6D68D /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarView.swift; path = "TRU Task/View/Components/SearchBarView.swift"; sourceTree = SOURCE_ROOT; };
+		F6BDBB532D942F3A00F6D68D /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopView.swift; path = "TRU Task/View/Components/TopView.swift"; sourceTree = SOURCE_ROOT; };
+		F6BDBB542D942F3A00F6D68D /* ProductCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductCardView.swift; path = "TRU Task/View/Components/ProductCardView.swift"; sourceTree = SOURCE_ROOT; };
 		F6C689712D932BBA00F75DC0 /* CachingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingServices.swift; sourceTree = "<group>"; };
 		F6C689732D93483E00F75DC0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F6D22E6F2D92E2FF0050FB7B /* AllProductsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsVM.swift; sourceTree = "<group>"; };
@@ -61,19 +67,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6C689702D932B9E00F75DC0 /* Core */ = {
+		F6C689702D932B9E00F75DC0 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				F6DBBA742D9200C000BD971C /* TRU_Task.xcdatamodeld */,
 				F6C689712D932BBA00F75DC0 /* CachingServices.swift */,
-				F6C689732D93483E00F75DC0 /* NetworkManager.swift */,
 			);
-			path = Core;
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		F6D22E6E2D92E2DF0050FB7B /* AllProducts */ = {
 			isa = PBXGroup;
 			children = (
+				F6BDBB532D942F3A00F6D68D /* TopView.swift */,
+				F6BDBB522D942F3A00F6D68D /* SearchBarView.swift */,
+				F6BDBB542D942F3A00F6D68D /* ProductCardView.swift */,
 				F6DBBA882D92052000BD971C /* AllProductsCV.swift */,
 				F6D22E6F2D92E2FF0050FB7B /* AllProductsVM.swift */,
 			);
@@ -100,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F6DBBA822D92047100BD971C /* App Manager */,
-				F6C689702D932B9E00F75DC0 /* Core */,
+				F6C689702D932B9E00F75DC0 /* CoreData */,
 				F6DBBA842D9204AE00BD971C /* Networking */,
 				F6DBBA832D92048D00BD971C /* Assets */,
 				F6DBBA852D9204B800BD971C /* UI + Ext */,
@@ -133,6 +141,7 @@
 		F6DBBA842D9204AE00BD971C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F6C689732D93483E00F75DC0 /* NetworkManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -246,10 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BDBB562D942F3A00F6D68D /* TopView.swift in Sources */,
 				F6DBBA6C2D9200C000BD971C /* AppDelegate.swift in Sources */,
 				F6DBBA8B2D92152100BD971C /* ProductCV.swift in Sources */,
 				F6DBBA8D2D9216A300BD971C /* ContentView.swift in Sources */,
 				F6D22E722D92E87C0050FB7B /* ProductsModel.swift in Sources */,
+				F6BDBB552D942F3A00F6D68D /* SearchBarView.swift in Sources */,
+				F6BDBB572D942F3A00F6D68D /* ProductCardView.swift in Sources */,
 				F6C689742D93483E00F75DC0 /* NetworkManager.swift in Sources */,
 				F6DBBA892D92052000BD971C /* AllProductsCV.swift in Sources */,
 				F6DBBA762D9200C000BD971C /* TRU_Task.xcdatamodeld in Sources */,
